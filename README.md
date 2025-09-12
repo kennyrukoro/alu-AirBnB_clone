@@ -1,6 +1,6 @@
-AirBnB Clone - The Console
+AirBnB Clone - The Console.
 Project Description
-This is the first step towards building a full web application: an AirBnB clone. This project implements a command interpreter to manage AirBnB objects, which serves as the foundation for future projects including HTML/CSS templating, database storage, API development, and front-end integration.
+This is the first step towards building a full web application: an AirBnB clone. This project implements a command interpreter to manage AirBnB objects, which serves as the foundation for future projects, including HTML/CSS templating, database storage, API development, and front-end integration.
 
 The console provides a simple command-line interface to:
 
@@ -14,7 +14,7 @@ Manage object persistence through file storage
 Command Interpreter.
 The command interpreter is a limited shell designed specifically for managing AirBnB objects. It's built using Python's cmd module and provides an interactive interface for object management.
 
-Use of both interactive and non interactive
+Use of both interactive and non interactive.
 
 Use on interactive
 
@@ -29,6 +29,7 @@ EOF  help  quit
 (hbnb) % show user 1010-2020-2222
 (hbnb) quit
 $
+
 
 Use on Non Interactive mode like in Shell project in C
 
@@ -55,7 +56,7 @@ EOF help quit
 (hbnb)
 $
 
-### Available Commands
+### Available Commands.
 
 | Command | Syntax | Description |
 |---------|--------|-------------|
@@ -142,9 +143,9 @@ The project implements the following classes:
 ## Storage
 
 The project uses a file-based storage system that:
-- Serializes objects to JSON format
-- Saves data to a file (`file.json`)
-- Reloads data when the program starts
+- Serializes objects to JSON format.
+- Saves data to a file (`file.json`).
+- Reloads data when the program starts.
 - Maintains object relationships and integrity
 
 ## Testing
@@ -192,4 +193,5 @@ $ ./console.py
 
 ## Authors
 
-- Frank Ishimwe
+- Frank Ishimwe (f.ishimwe@alustudent.com)
+- Kenny Crepin Rukoro (k.rukoro@alustudent.com)
