@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This modul is for creating place classs"""
-from models.base_models import BaseModel
+from models.base_model import BaseModel
 
 class Place(BaseModel):
     """This class manages Place objects"""

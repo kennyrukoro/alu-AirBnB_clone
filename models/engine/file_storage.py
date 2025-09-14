@@ -29,7 +29,7 @@ class FileStorage:
             
     def classes(self):
         """Return a dictionary of vslid classes and their references"""
-        from models.base_models import BaseModel
+        from models.base_model import BaseModel
         from models.user import User
         from models.state import State
         from models.city import City

@@ -2,7 +2,7 @@
 """Module for the entry point of the command interpreter."""
 
 import cmd # to help access the cmd module
-from models.base_models import BaseModel # to help access the BaseModel class from models.base_model import BaseModel to 
+from models.base_model import BaseModel # to help access the BaseModel class from models.base_model import BaseModel to 
 from models import storage # to help access the storage instance which is of type FileStorage that serializes instances to a JSON file and deserializes JSON file to instances
 import re   # to help access the re module which supports regular expressions
 import json
