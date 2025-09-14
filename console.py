@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Module for the entry point of the command interpreter."""
 
-import cmd # to help access the cmd module
-from models.base_model import BaseModel # to help access the BaseModel class from models.base_model import BaseModel to 
-from models import storage # to help access the storage instance which is of type FileStorage that serializes instances to a JSON file and deserializes JSON file to instances
-import re   # to help access the re module which supports regular expressions
+import cmd
+from models.base_model import BaseModel
+from models import storage
+import re
 import json
 
 
@@ -12,7 +12,7 @@ class HBNBCommand(cmd.Cmd):
 
     """Class for the command interpreter."""
 
-    prompt = "(hbnb)"  
+    prompt = "(hbnb) "
 
     def default(self, line):
         """Catch commands if nothing else matches then."""
@@ -217,4 +217,3 @@ class HBNBCommand(cmd.Cmd):
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
-    
