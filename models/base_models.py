@@ -1,10 +1,13 @@
-"""this model will contain public attributes and methods"""
+#!usr/bin/python3
+"""this is the base model and  will contain public attributes and methods"""
 import uuid
 from datetime import datetime
 from models import storage
 
 class BaseModel:
+    
     """Class frmo whci all the classes will inherit"""
+    
     def __init__(self, *args, **kwargs):
         """Initializes instance attributes
         args: 
@@ -15,9 +18,9 @@ class BaseModel:
         if kwargs is not None and kwargs != {}:
             for key in kwargs:
                 if key == "created_at":
-                    self.__dict__["created_at"] = datetime.strptime(kwargs["created_at"], "%Y/%m/%dT %H:%M:%S.%f")
+                    self.__dict__["created_at"] = datetime.strptime(kwargs["created_at"], "%Y-%m-%dT %H:%M:%S.%f")
                 elif key == "updated_at":
-                    self.__dict__["updated_at"] = datetime.strptime(kwargs["updated_at"], "%Y/%m/%dT%H:%M:%S.%f")
+                    self.__dict__["updated_at"] = datetime.strptime(kwargs["updated_at"], "%Y-%m-%dT%H:%M:%S.%f")
                 else:
                     self.__dict__[key] = kwargs[key]
         else:
@@ -41,5 +44,3 @@ class BaseModel:
         my_dict['created_at'] = my_dict["created_at"].isoformat()
         my_dict['updated_at'] = my_dict["updated_at"].isoformat()
         return my_dict
-
-
